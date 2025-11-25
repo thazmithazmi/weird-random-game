@@ -7,12 +7,11 @@ latest_release = requests.get('https://pastebin.com/raw/pKL5xQXH').text
 #Do not change. Used for auto updating.
 version_number = 3
 latest_version = 0
-
 for i in latest_release.splitlines():
     if 'version_number' in i:
         split = i.split(' ')
         latest_version = split[len(split)-1]
-        print(latest_version)
+        break
 
 kidneys = 1
 money = 0.00
