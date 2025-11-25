@@ -2,7 +2,7 @@ import requests
 import random
 import os
 
-latest_release = requests.get('https://pastebin.com/raw/pKL5xQXH').text
+latest_release = requests.get('https://raw.githubusercontent.com/thazmithazmi/weird-random-game/refs/heads/main/latest.py').text
 
 #Do not change. Used for auto updating.
 version_number = 3
